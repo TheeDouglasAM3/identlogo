@@ -12,6 +12,11 @@ export const Container = styled.div`
     top: -90px;
     box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.08);
     border-radius: 6px;
+    transition: box-shadow 1s;
+  }
+
+  > .card-front:hover {
+    box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.3);
   }
 
   > .card-back {
