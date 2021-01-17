@@ -15,7 +15,7 @@ export default function UserMenu() {
         <IoNotifications color="#2C2E3D" size="1.5rem" />
         <div>
           <span>Olá, </span>
-          <strong>Felipe</strong>
+          <strong>Doug</strong>
           <img src={imgPerson} alt="you" />
         </div>
         <IoApps color="#2C2E3D" size="1.8rem" />
