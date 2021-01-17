@@ -16,4 +16,25 @@ export default createGlobalStyle`
   a { 
     text-decoration: none;
   }
+  /* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border: 50px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFF; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 `
