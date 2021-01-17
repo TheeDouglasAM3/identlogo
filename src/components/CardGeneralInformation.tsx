@@ -3,7 +3,7 @@ import React from 'react'
 
 import { Container } from '../styles/components/cardGeneralInformation'
 
-export interface PokemonDisplayProps {
+interface CardGeneralInformationProps {
   children: any,
   positive: boolean,
   numberPercent: number
@@ -11,7 +11,7 @@ export interface PokemonDisplayProps {
   description: string,
 }
 
-const CardGeneralInformation: React.FC<PokemonDisplayProps> = ({
+const CardGeneralInformation: React.FC<CardGeneralInformationProps> = ({
   children, positive, numberPercent, bigNumber, description,
 }) => (
   <Container>
