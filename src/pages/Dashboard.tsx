@@ -1,12 +1,13 @@
 import React, { ReactElement } from 'react'
 
-import { Container } from '../styles/pages/main'
+import { Container } from '../styles/pages/dashboard'
 import Navbar from '../components/Navbar'
 import UserMenu from '../components/UserMenu'
 import CardGeneralInformation from '../components/CardGeneralInformation'
 import ButtonDefault from '../components/ButtonDefault'
 import CardAttendance from '../components/CardAttendance'
 import CardMostPerformedTest from '../components/CardMostPerformedTest'
+import CardPacient from '../components/CardPacient'
 
 import userIcon from '../images/userIcon.png'
 import testTubeIcon from '../images/testTube.png'
@@ -14,11 +15,16 @@ import testTubeCorrectIcon from '../images/testTubeCorrect.png'
 import testTubeWrongIcon from '../images/testTubeWrong.png'
 import uilBrain from '../images/uilBrain.png'
 import uilCell from '../images/uilCell.png'
+import personA from '../images/person2.png'
+import personB from '../images/person3.png'
+import personC from '../images/person4.png'
 
 const Main = (): ReactElement => (
   <Container>
     <div id="page-main">
-      <Navbar />
+      <Navbar
+        navItemActiveNumber={1}
+      />
       <div className="dashboard-area">
         <UserMenu />
         <div className="informacoes-gerais">
@@ -114,6 +120,29 @@ const Main = (): ReactElement => (
         </div>
         <div className="atualizacoes-importantes">
           <h3>Atualizações Importantes</h3>
+          <div className="updates-row">
+            <CardPacient
+              urlImg={personA}
+              namePacient="Renata Augusto Ferreira"
+              nameTest="TDAH CAB ADHD"
+              isTestComplete
+              date="20/10/2023"
+            />
+            <CardPacient
+              urlImg={personB}
+              namePacient="Carlos Nobrega Baccio"
+              nameTest="TDAH CAB ADHD"
+              isTestComplete={false}
+              date="20/10/2023"
+            />
+            <CardPacient
+              urlImg={personC}
+              namePacient="Suelton A. Mellis"
+              nameTest="TDAH CAB ADHD"
+              isTestComplete={false}
+              date="20/10/2023"
+            />
+          </div>
         </div>
       </div>
     </div>

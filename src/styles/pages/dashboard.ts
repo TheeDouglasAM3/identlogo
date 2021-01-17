@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 import imgBackground from '../../images/background.png'
-import imgCardBackground from '../../images/retangular.png'
 
 export const Container = styled.div`
   #page-main {
@@ -13,15 +12,16 @@ export const Container = styled.div`
   }
 
   .dashboard-area {
-    width: 100%;
+    width: 82%;
     background: #EFF2F9;
-    margin: 1.2rem 1.2rem 1.2rem 0rem;
+    margin: 1% 1% 1% 0rem;
     border-radius: 2.0rem;
   }
 
   .informacoes-gerais,
   .historico-atendimento,
-  .atualizacoes-importantes {
+  .atualizacoes-importantes,
+  .updates-row {
     width: 100%;    
     padding: 0.6rem 0rem 0rem 2rem;
   }
@@ -73,6 +73,13 @@ export const Container = styled.div`
     height: 15rem;
     margin-top: 0.6rem;
     background: #FFFFFF;
+  }
+
+  .atualizacoes-importantes .updates-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1.2rem 0rem 0rem;
   }
 
 `
