@@ -1,7 +1,6 @@
 import React, { ReactElement } from 'react'
 
 import { BsThreeDots } from 'react-icons/bs'
-import { AiFillEdit } from 'react-icons/ai'
 import { Container } from '../styles/pages/pacients'
 import Navbar from '../components/Navbar'
 import UserMenu from '../components/UserMenu'
